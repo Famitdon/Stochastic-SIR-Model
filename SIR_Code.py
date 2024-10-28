@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
-
-
 #Normal SIR
 
 import numpy as np
@@ -171,9 +168,6 @@ for _ in range(R0):
 
 # Run the random walk and SIR simulation animation
 animate_sir_random_walk(agents, R_circle, infection_radius, alpha, beta, sigma, T)
-
-
-# In[9]:
 
 
 #Stochastic-SIR-Model
@@ -361,7 +355,7 @@ alpha = 0.5              # Probability of exposure upon contact
 beta = 0.007             # Probability of recovery
 delta = 0.1              # Probability of becoming infectious after exposure
 vaccination_rate = 0.002  # Probability of vaccination for susceptible agents
-T = 1000  # Maximum number of steps for animation and simulation
+T = 1500  # Maximum number of steps for animation and simulation
 
 # Initialize agents
 agents = []
@@ -385,8 +379,6 @@ for _ in range(V0):
 animate_seirv_random_walk(agents, R_circle, infection_radius, alpha, beta, delta, vaccination_rate, T)
 
 
-# In[ ]:
-
 
 # Stochastic model of SIR
 
@@ -400,7 +392,7 @@ gamma = 0.001  # Probability of losing immunity (becoming susceptible again)
 
 # Population size and simulation parameters
 N = 100        # Number of agents (people)
-T = 500        # Number of time steps
+T = 1500        # Number of time steps
 
 # Transition probability matrix 
 transition_matrix = np.array([
